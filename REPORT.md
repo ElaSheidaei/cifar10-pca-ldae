@@ -26,11 +26,6 @@ Implementation details are provided as notebooks.
 
 The corresponding plot is saved as: `figures/fast_sweep_linear_probe.png`.
 
-### Interpretation (why these numbers make sense)
-- **Compression vs task difficulty.** With small `d` (8–16), the PCA tokenizer enforces a stronger information bottleneck, producing smoother/low-frequency patch reconstructions. Under a limited training budget, this can make the denoising task easier and encourages learning more stable features.
-- **Higher d can hurt with the same noise schedule and short training.** With `d=32`, the corruption in latent space has more degrees of freedom; after inverse PCA it yields more complex, structured perturbations in pixel space. With only 10 AE epochs, the model may not denoise these effectively, reducing feature quality for linear probing.
-- **Small gaps between 8 and 16 are expected** in a short run (few epochs, subset training). The main robust signal in this configuration is the drop at larger latent dimension.
-
 ---
 
 ## 2) Full run + qualitative visualizations (d = 16)
