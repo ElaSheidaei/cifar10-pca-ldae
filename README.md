@@ -1,6 +1,6 @@
 # CIFAR-10 PCA latent-space DAE (l-DAE-style)
 
-This repository contains a small CIFAR-10 prototype inspired by latent denoising autoencoder (l-DAE) ideas:
+This repository contains a small CIFAR-10 prototype inspired by latent denoising autoencoder (l-DAE) ideas following **Deconstructing Denoising Diffusion Models for Self-Supervised Learning (Chen et al.)**:
 PCA is used as a patch-wise tokenizer, noise is added in latent space with a simple timestep-dependent schedule, and a small denoising autoencoder is trained. Representation quality is evaluated with a linear probe.
 
 ## Contents
