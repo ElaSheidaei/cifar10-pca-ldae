@@ -57,7 +57,7 @@ Two figure panels are saved in `figures/`:
    - Clean image  
    - Latent-noised input  
    - Autoencoder denoised reconstruction  
-   **Observation:** the denoiser recovers global structure and removes a substantial fraction of the structured corruption; fine details can appear smoothed, consistent with the PCA bottleneck and the limited-capacity AE.
+   
 
 ---
 
